@@ -1,0 +1,70 @@
+/* Design tokens.
+   Palette follows journal.economics.edu.az (deep slate-navy, white, red call-to-action, blue links)
+   plus the gold of the Ağdaş logo. */
+:root {
+  --navy-950: #0a1120;
+  --navy-900: #0f172a;
+  --navy-800: #1b2740;
+  --navy-700: #334155;
+  --slate-600: #475569;
+  --slate-500: #64748b;
+  --slate-300: #cbd5e1;
+  --slate-200: #e2e8f0;
+  --slate-100: #f1f5f9;
+  --paper: #fdfdfc;
+  --white: #ffffff;
+
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --blue-600: #2563eb;
+  --blue-100: #dbe7ff;
+  --gold-500: #d8ab2c;
+  --gold-600: #b88a14;
+  --gold-100: #fbf1d3;
+  --green-600: #15803d;
+
+  --color-text: var(--navy-900);
+  --color-muted: var(--slate-600);
+  --color-line: var(--slate-200);
+  --color-surface: var(--white);
+  --color-page: var(--paper);
+
+  --font-display: "Montserrat", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: clamp(1rem, 0.96rem + 0.2vw, 1.0625rem);
+  --text-lg: clamp(1.1rem, 1.02rem + 0.4vw, 1.3rem);
+  --text-h3: clamp(1.3rem, 1.1rem + 0.9vw, 1.75rem);
+  --text-h2: clamp(1.9rem, 1.3rem + 2.6vw, 3.25rem);
+  --text-hero: clamp(3rem, 1.4rem + 7.4vw, 7rem);
+  --text-numeral: clamp(3.5rem, 2rem + 5vw, 6.5rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-section: clamp(4rem, 2.5rem + 6vw, 8rem);
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 2.5rem);
+  --wrap: 78rem;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.06), 0 10px 30px -12px rgb(15 23 42 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(15 23 42 / 0.08), 0 24px 48px -18px rgb(15 23 42 / 0.32);
+
+  --duration-fast: 150ms;
+  --duration-normal: 320ms;
+  --duration-slow: 700ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --nav-height: 3.5rem;
+}

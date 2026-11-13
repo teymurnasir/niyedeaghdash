@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Niyə Ağdaş? — Ağdaş rayonunun strateji inkişafı və investisiya imkanları (2027–2030)</title>
+  <meta name="description" content="Ağdaş rayonunun strateji sosial-iqtisadi inkişaf istiqamətləri (2027–2030): rayon haqqında məlumat, investisiya üstünlükləri, prioritet layihələr və investorlar üçün dəstək imkanları.">
+  <link rel="icon" href="assets/img/institute-emblem.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/sections.css">
+  <link rel="stylesheet" href="styles/blocks.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Əsas məzmuna keç</a>
+
+  <header class="brand-bar">
+    <div class="wrap brand-bar__inner">
+      <a class="brand" href="#top" aria-label="Ağdaş — ana səhifə">
+        <img src="assets/img/agdash-logo.png" width="310" height="100" alt="Ağdaş">
+      </a>
+      <p class="brand-bar__title">
+        <span>Ağdaş Rayon İcra Hakimiyyəti</span>
+        <strong>Strateji inkişaf istiqamətləri · 2027–2030</strong>
+      </p>
+      <div class="brand brand--partner">
+        <span>Elm və Təhsil Nazirliyi<br>İqtisadiyyat İnstitutu</span>
+        <img src="assets/img/institute-emblem.png" width="218" height="201" alt="İqtisadiyyat İnstitutunun emblemi">
+      </div>
+    </div>
+  </header>
+
+  <nav class="main-nav" aria-label="Əsas naviqasiya">
+    <div class="wrap main-nav__inner">
+      <a class="main-nav__home" href="#top">Niyə Ağdaş?</a>
+      <button class="main-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="main-nav__toggle-bars" aria-hidden="true"></span>
+        <span>Menyu</span>
+      </button>
+      <ul class="main-nav__menu" id="nav-menu"></ul>
+      <a class="btn btn--accent main-nav__cta" href="#investorlar-muraciet">Əlaqə</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-heading">
+      <svg class="hero__motif" viewBox="0 0 400 400" aria-hidden="true" focusable="false"></svg>
+      <div class="wrap hero__inner">
+        <div class="hero__copy">
+          <p class="kicker kicker--light">Ağdaş Rayon İcra Hakimiyyəti</p>
+          <h1 id="hero-heading">Niyə <span>Ağdaş?</span></h1>
+          <p class="hero__lead">Bir rayona yatırım, yeddi rayonun bazarına çıxış. Ağdaş — Azərbaycanın mərkəzində aqro-sənaye və logistika qovşağı.</p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#layiheler">İnvestisiya layihələri</a>
+            <a class="btn btn--ghost" href="#strategiya">Strategiya 2027–2030</a>
+          </div>
+        </div>
+        <figure class="hub">
+          <svg class="hub__svg" id="hub-svg" viewBox="0 0 440 440" role="img" aria-labelledby="hub-title"></svg>
+          <figcaption id="hub-title">Ağdaş şəhərindən qonşu rayon mərkəzlərinə avtomobil yolu ilə məsafə (sxem yalnız məsafəni göstərir, istiqaməti yox)</figcaption>
+        </figure>
+      </div>
+      <div class="wrap">
+        <dl class="hero-stats" id="hero-stats"></dl>
+      </div>
+    </section>
+
+    <div id="sections"></div>
+    <noscript><p class="wrap noscript">Bu səhifənin məzmununu görmək üçün brauzerdə JavaScript aktiv olmalıdır.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <div>
+        <p class="site-footer__title">Ağdaş rayonunun strateji sosial-iqtisadi inkişaf istiqamətləri (2027–2030-cu illər)</p>
+        <p>Səhifədəki məlumatlar Elm və Təhsil Nazirliyi İqtisadiyyat İnstitutunun Ağdaş Rayon İcra Hakimiyyəti üçün hazırladığı geniş hesabat əsasında tərtib olunub. Statistik göstəricilərin mənbəyi: Dövlət Statistika Komitəsi və müəllif hesablamaları.</p>
+      </div>
+      <ul class="site-footer__links" id="footer-links"></ul>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title"></dialog>
+
+  <script defer src="js/dom.js"></script>
+  <script defer src="js/config.js"></script>
+  <script defer src="content/about.js"></script>
+  <script defer src="content/why.js"></script>
+  <script defer src="content/projects.js"></script>
+  <script defer src="content/strategy.js"></script>
+  <script defer src="content/investors.js"></script>
+  <script defer src="js/blocks.js"></script>
+  <script defer src="js/projects.js"></script>
+  <script defer src="js/hero.js"></script>
+  <script defer src="js/nav.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+</html>
