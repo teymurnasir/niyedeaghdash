@@ -74,7 +74,8 @@
   function initHero() {
     document.querySelector('.hero__motif').append(
       svg('path', { d: scallopPath(200, 200, 150, 14, 8), fill: 'none', stroke: 'currentColor', 'stroke-width': 30 }));
-    drawHub(document.getElementById('hub-svg'));
+    const hub = document.getElementById('hub-svg');
+    if (hub) drawHub(hub);
     document.getElementById('hero-stats').replaceWith(
       Object.assign(statList(HERO_STATS, 'hero-stats'), { id: 'hero-stats' }));
   }

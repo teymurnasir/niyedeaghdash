@@ -20,52 +20,93 @@
 <body>
   <a class="skip-link" href="#main">Əsas məzmuna keç</a>
 
-  <header class="brand-bar">
-    <div class="wrap brand-bar__inner">
-      <a class="brand" href="#top" aria-label="Ağdaş — ana səhifə">
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top" aria-label="Ağdaş Rayon İcra Hakimiyyəti — ana səhifə">
         <img src="assets/img/agdash-logo.png" width="310" height="100" alt="Ağdaş">
-      </a>
-      <p class="brand-bar__title">
         <span>Ağdaş Rayon İcra Hakimiyyəti</span>
-        <strong>Strateji inkişaf istiqamətləri · 2027–2030</strong>
-      </p>
-      <div class="brand brand--partner">
-        <span>Elm və Təhsil Nazirliyi<br>İqtisadiyyat İnstitutu</span>
-      </div>
+      </a>
+      <a class="site-title" href="#top">Niyə Ağdaş?</a>
+      <form class="search" role="search" id="site-search" autocomplete="off">
+        <label class="visually-hidden" for="search-input">Saytda axtar</label>
+        <input id="search-input" type="search" placeholder="Saytda axtar…" aria-controls="search-results" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+        <ul class="search__results" id="search-results" hidden></ul>
+      </form>
     </div>
   </header>
 
   <nav class="main-nav" aria-label="Əsas naviqasiya">
     <div class="wrap main-nav__inner">
-      <a class="main-nav__home" href="#top">Niyə Ağdaş?</a>
       <button class="main-nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
         <span class="main-nav__toggle-bars" aria-hidden="true"></span>
         <span>Menyu</span>
       </button>
       <ul class="main-nav__menu" id="nav-menu"></ul>
-      <a class="btn btn--accent main-nav__cta" href="#investorlar-muraciet">Əlaqə</a>
     </div>
   </nav>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-heading">
       <svg class="hero__motif" viewBox="0 0 400 400" aria-hidden="true" focusable="false"></svg>
-      <div class="wrap hero__inner">
-        <div class="hero__copy">
-          <p class="kicker kicker--light">Ağdaş Rayon İcra Hakimiyyəti</p>
-          <h1 id="hero-heading">Niyə <span>Ağdaş?</span></h1>
-          <p class="hero__lead">Bir rayona yatırım, yeddi rayonun bazarına çıxış. Ağdaş — Azərbaycanın mərkəzində aqro-sənaye və logistika qovşağı.</p>
-          <div class="hero__actions">
-            <a class="btn btn--accent" href="#layiheler">İnvestisiya layihələri</a>
-            <a class="btn btn--ghost" href="#strategiya">Strategiya 2027–2030</a>
-          </div>
-        </div>
-        <figure class="hub">
-          <svg class="hub__svg" id="hub-svg" viewBox="0 0 440 440" role="img" aria-labelledby="hub-title"></svg>
-          <figcaption id="hub-title">Ağdaş şəhərindən qonşu rayon mərkəzlərinə avtomobil yolu ilə məsafə (sxem yalnız məsafəni göstərir, istiqaməti yox)</figcaption>
-        </figure>
-      </div>
       <div class="wrap">
+        <div class="hero__top">
+          <div class="welcome">
+            <h1 id="hero-heading">Xoş gəlmisiniz! <span>Ağdaş Rayonunun İnvestisiya Portalı</span></h1>
+            <svg class="district-map" viewBox="60 0 140 210" role="img" aria-labelledby="map-title">
+              <title id="map-title">Ağdaş rayonunun sərhədi, Türyançay və Ağdaş şəhəri (OpenStreetMap)</title>
+              <defs>
+                <path id="map-shape" d="M72.3 102.4L75.3 104.7L76.0 106.6L74.8 109.0L72.8 109.7L73.3 111.0L77.1 110.8L83.8 105.2L87.5 106.6L87.4 107.9L84.1 110.4L82.7 112.8L82.8 114.2L84.0 114.7L86.4 113.9L87.8 111.8L88.1 108.2L88.8 107.2L90.2 107.3L92.6 115.9L90.2 118.7L89.0 122.4L87.9 121.5L87.8 118.9L86.7 119.0L86.9 122.3L91.6 127.5L95.7 134.2L100.9 136.0L102.5 137.5L102.1 138.8L97.4 140.7L97.9 143.8L100.6 144.6L104.9 139.7L111.3 137.1L112.1 138.4L111.6 139.4L108.4 141.9L105.9 142.5L104.5 144.2L105.3 145.4L107.1 144.5L109.6 144.7L111.4 146.0L111.2 147.0L104.3 147.8L103.3 148.7L104.0 152.5L106.9 154.2L111.5 154.0L114.3 154.8L117.0 157.5L117.8 158.8L117.3 160.1L114.4 159.0L112.8 160.2L115.6 164.2L114.3 166.8L114.3 168.5L115.2 169.6L116.7 169.6L118.1 167.6L119.0 167.4L120.2 169.4L120.1 172.1L123.6 174.6L125.8 172.8L123.2 167.4L123.7 165.6L124.8 165.4L128.6 169.1L128.9 171.4L131.1 170.0L135.4 169.9L135.8 176.0L130.9 174.6L129.4 176.3L130.2 177.8L134.0 179.2L134.6 180.7L134.2 182.3L132.8 182.6L129.7 180.2L128.4 180.7L128.1 181.9L129.4 183.8L132.3 185.9L134.2 185.6L135.9 182.8L138.1 185.7L141.8 179.2L144.3 177.0L145.5 173.3L151.1 167.2L155.2 165.6L155.5 164.8L154.3 162.6L142.8 153.2L137.3 143.5L138.2 137.5L142.8 134.9L142.9 127.1L144.6 126.4L143.5 119.2L147.9 116.9L149.1 110.6L152.6 106.5L154.4 106.1L159.3 99.8L169.7 99.8L170.5 96.6L174.6 94.7L178.4 97.4L185.6 96.3L185.8 89.5L187.0 83.5L187.7 60.7L180.7 57.8L170.2 51.3L164.9 49.1L166.3 43.4L165.7 42.6L166.6 34.0L165.7 31.1L162.3 26.9L160.9 23.8L156.6 22.0L146.7 23.5L141.9 16.5L135.7 13.6L134.5 22.4L111.6 14.2L99.8 12.0L96.5 27.4L84.3 55.3L82.7 62.1L79.9 69.3L91.4 71.0L88.3 88.1L77.4 89.8L77.1 96.5Z"/>
+                <clipPath id="map-clip"><use href="#map-shape"/></clipPath>
+                <linearGradient id="map-fill" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#f7ecd0"/>
+                </linearGradient>
+                <linearGradient id="map-edge" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#f3d27a"/><stop offset="0.5" stop-color="#d8ab2c"/><stop offset="1" stop-color="#a87b12"/>
+                </linearGradient>
+              </defs>
+              <use href="#map-shape" class="district-map__depth" transform="translate(1.5 6)"/>
+              <use href="#map-shape" class="district-map__land"/>
+              <use href="#map-shape" class="district-map__shine"/>
+              <path class="district-map__river" clip-path="url(#map-clip)" d="M164.9 49.1L154.2 67.2L154.4 69.9L150.4 78.9L151.0 80.9L149.6 84.1L147.4 85.9L145.3 85.7L144.0 88.0L142.3 87.8L140.9 89.6L138.3 95.9L138.9 97.1L136.6 98.3L134.8 104.0L135.1 105.1L138.1 105.9L139.2 108.6L136.7 114.1L140.3 123.7L143.2 128.4L142.8 133.1L144.0 137.7L143.2 138.9L144.7 142.3L146.1 153.3L161.3 168.5L170.5 174.6L173.7 178.5L175.3 184.3L178.8 188.3L181.2 188.2L182.3 190.6L184.7 190.5L191.8 193.7"/>
+              <g transform="translate(144.9 68.6)">
+                <g class="district-map__pin">
+                  <path d="M0 0C-5.5-7-9-11-9-16a9 9 0 0 1 18 0c0 5-3.5 9-9 16Z"/>
+                  <circle cy="-16" r="3.2"/>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <aside class="quick" aria-labelledby="quick-title">
+            <h2 id="quick-title">Xəbərlər</h2>
+            <ul>
+              <li><a href="#niye-agdas">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 27h22"/><path d="M8 27v-6h3.5v6M14 27v-9h3.5v9M20 27v-12h3.5v12"/><path d="M6 17 13 11l4 3 8-8"/><path d="M20 6h5v5"/></svg>
+                <span>İnvestisiya imkanları</span></a></li>
+              <li><a href="#strategiya">
+                <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 13.5v5l3 .8 11 5.2V7.5L8 12.7l-3 .8Z"/><path d="m8 19.3 1.6 6.2h3.2l-1.3-5.3"/><path d="M23 12.5c1.4 1 1.4 6 0 7M25.8 10c2.8 2.3 2.8 9.7 0 12"/></svg>
+                <span>Rayonun inkişafı üzrə yeniliklər</span></a></li>
+            </ul>
+            <a class="quick__all" href="#layiheler">Hamısına bax</a>
+          </aside>
+        </div>
+
+        <ul class="sectors" aria-label="Əsas investisiya istiqamətləri">
+          <li><a class="sector sector--green" href="#layiheler-senaye">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 27V15l7 4v-4l7 4V9h3v-4h3v4h3v18H4Z"/><path d="M8 23h3m4 0h3m4 0h2"/></svg>
+            <span><strong>Sənaye və istehsal</strong>Sənaye məhəlləsi, aqro-emal və aqroparklar</span></a></li>
+          <li><a class="sector sector--violet" href="#layiheler-ticaret">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 9h16v13H3zM19 13h5l4 5v4h-9z"/><circle cx="8" cy="23.5" r="2.5"/><circle cx="23" cy="23.5" r="2.5"/></svg>
+            <span><strong>Logistika və anbar</strong>Soyuducu anbar, tədarük mərkəzi, bazara çıxış</span></a></li>
+          <li><a class="sector sector--blue" href="#strategiya-prioritetler">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="9" y="9" width="14" height="14" rx="2"/><rect x="13" y="13" width="6" height="6"/><path d="M12 5v4m4-4v4m4-4v4m-8 14v4m4-4v4m4-4v4M5 12h4m-4 4h4m-4 4h4m14-8h4m-4 4h4m-4 4h4"/></svg>
+            <span><strong>Rəqəmsal infrastruktur</strong>E-ticarət, e-logistika, rəqəmsal kənd təsərrüfatı</span></a></li>
+          <li><a class="sector sector--rose" href="#layiheler-turizm">
+            <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 26 12 9l5 9 3-5 9 13H3Z"/><path d="M12 9v-4l4 2-4 2"/><path d="m9 26 3-6 3 6"/></svg>
+            <span><strong>Turizm və xidmətlər</strong>Aqroturizm, festivallar və tibb xidmətləri</span></a></li>
+        </ul>
+
         <dl class="hero-stats" id="hero-stats"></dl>
       </div>
     </section>
@@ -79,6 +120,7 @@
       <div>
         <p class="site-footer__title">Ağdaş rayonunun strateji sosial-iqtisadi inkişaf istiqamətləri (2027–2030-cu illər)</p>
         <p>Səhifədəki məlumatlar Elm və Təhsil Nazirliyi İqtisadiyyat İnstitutunun Ağdaş Rayon İcra Hakimiyyəti üçün hazırladığı geniş hesabat əsasında tərtib olunub. Statistik göstəricilərin mənbəyi: Dövlət Statistika Komitəsi və müəllif hesablamaları.</p>
+        <p>Xəritə məlumatı: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> iştirakçıları.</p>
       </div>
       <ul class="site-footer__links" id="footer-links"></ul>
     </div>
@@ -97,6 +139,7 @@
   <script defer src="js/projects.js"></script>
   <script defer src="js/hero.js"></script>
   <script defer src="js/nav.js"></script>
+  <script defer src="js/search.js"></script>
   <script defer src="js/main.js"></script>
 </body>
 </html>

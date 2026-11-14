@@ -14,6 +14,8 @@
         el('ul', { class: 'nav-sub', 'aria-label': section.title }, section.subs.map((sub, i) =>
           el('li', null, el('a', { href: '#' + sub.id, 'data-num': pad(i + 1), 'data-sub': sub.id, text: sub.title })))),
       ])));
+    menu.append(el('li', { class: 'nav-item' },
+      el('a', { class: 'nav-link nav-link--plain', href: '#investorlar-muraciet', text: 'Əlaqə' })));
   }
 
   function initToggle(toggle, menu) {

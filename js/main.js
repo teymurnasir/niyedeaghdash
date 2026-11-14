@@ -80,6 +80,7 @@
     window.Agdash.initHero();
     window.Agdash.initProjectDialog();
     window.Agdash.initNav(sections);
+    window.Agdash.initSearch();
     scrollToHash();
     keepHashAligned();
     initReveal();
