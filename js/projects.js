@@ -42,8 +42,8 @@
     dialog.showModal();
   }
 
-  function projectCard(project) {
-    return el('article', { class: 'project reveal' }, [
+  function projectCard(id, project) {
+    return el('article', { class: 'project reveal', id: 'project-' + id }, [
       el('div', { class: 'project__media' }, [
         el('img', { src: IMAGE_DIR + project.image, alt: project.imageAlt, loading: 'lazy', width: '1400', height: '933' }),
         el('span', { class: 'project__code', text: project.code }),
@@ -64,7 +64,7 @@
     return el('div', { class: 'projects' }, ids.map((id) => {
       const project = window.Agdash.projects[id];
       if (!project) throw new Error('Layihə tapılmadı: ' + id);
-      return projectCard(project);
+      return projectCard(id, project);
     }));
   }
 

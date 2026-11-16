@@ -14,26 +14,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap">
   <link rel="stylesheet" href="styles/tokens.css">
-  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/layout.css?v=2">
   <link rel="stylesheet" href="styles/sections.css">
-  <link rel="stylesheet" href="styles/blocks.css">
+  <link rel="stylesheet" href="styles/blocks.css?v=2">
 </head>
 <body>
   <a class="skip-link" href="#main">Əsas məzmuna keç</a>
 
   <header class="site-header">
     <div class="wrap site-header__inner">
-      <a class="brand" href="#top" aria-label="Ağdaş Rayon İcra Hakimiyyəti — ana səhifə">
-        <img src="assets/img/agdash-logo.png" width="310" height="100" alt="Ağdaş">
-        <span>Ağdaş Rayon İcra Hakimiyyəti</span>
+      <div class="header-start">
+        <a class="brand brand--mark" href="#top" aria-label="Ağdaş — ana səhifə">
+          <img src="assets/img/agdash-logo.png" width="310" height="100" alt="Ağdaş">
+        </a>
+        <form class="search" role="search" id="site-search" autocomplete="off">
+          <label class="visually-hidden" for="search-input">Saytda axtar</label>
+          <input id="search-input" type="search" placeholder="Saytda axtar…" role="combobox" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+          <ul class="search__results" id="search-results" role="listbox" hidden></ul>
+        </form>
+      </div>
+      <a class="site-title" href="#top">Ağdaş Rayonunun<br>İnvestisiya Portalı</a>
+      <a class="brand brand--authority" href="#top" aria-label="Ağdaş Rayon İcra Hakimiyyəti — ana səhifə">
+        <img src="assets/img/azerbaijan-government-building-emblem.png" width="200" height="120" alt="Ağdaş Rayon İcra Hakimiyyəti">
       </a>
-      <a class="site-title" href="#top">Niyə Ağdaş?</a>
-      <form class="search" role="search" id="site-search" autocomplete="off">
-        <label class="visually-hidden" for="search-input">Saytda axtar</label>
-        <input id="search-input" type="search" placeholder="Saytda axtar…" aria-controls="search-results" aria-expanded="false">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
-        <ul class="search__results" id="search-results" hidden></ul>
-      </form>
     </div>
   </header>
 
@@ -53,7 +57,7 @@
       <div class="wrap">
         <div class="hero__top">
           <div class="welcome">
-            <h1 id="hero-heading">Xoş gəlmisiniz! <span>Ağdaş Rayonunun İnvestisiya Portalı</span></h1>
+            <h1 id="hero-heading">Xoş gəlmisiniz! <span>Niyə Ağdaş?</span></h1>
             <svg class="district-map" viewBox="60 0 140 210" role="img" aria-labelledby="map-title">
               <title id="map-title">Ağdaş rayonunun sərhədi, Türyançay və Ağdaş şəhəri (OpenStreetMap)</title>
               <defs>
@@ -137,10 +141,10 @@
   <script defer src="content/strategy.js"></script>
   <script defer src="content/investors.js"></script>
   <script defer src="js/blocks.js"></script>
-  <script defer src="js/projects.js"></script>
+  <script defer src="js/projects.js?v=3"></script>
   <script defer src="js/hero.js"></script>
   <script defer src="js/nav.js"></script>
-  <script defer src="js/search.js"></script>
+  <script defer src="js/search.js?v=4"></script>
   <script defer src="js/main.js"></script>
 </body>
 </html>
