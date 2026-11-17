@@ -8,7 +8,7 @@
     id: 'strategiya',
     kicker: 'Strateji sənəd',
     title: 'İnkişaf strategiyası',
-    intro: '“Ağdaş rayonunun strateji sosial-iqtisadi inkişaf istiqamətləri (2027–2030-cu illər)” — elmi əsaslarla hazırlanmış diaqnostika, prioritetlər və icra mexanizmi.',
+    intro: '“Ağdaş rayonunun strateji sosial-iqtisadi inkişaf istiqamətləri (2027–2031-ci illər)” — elmi əsaslarla hazırlanmış diaqnostika, prioritetlər və icra mexanizmi.',
     subs: [
       {
         id: 'strategiya-layihe',
@@ -22,7 +22,7 @@
       },
       {
         id: 'strategiya-hedefler',
-        title: '2027–2030-cu illər üzrə hədəflər',
+        title: '2027–2031-ci illər üzrə hədəflər',
         blocks: [
           { t: 'lead', text: 'Strateji xətt: “daha çox eyni istehsal” modelindən “mövcud üstünlüklərdən daha çox əlavə dəyər” modelinə keçid.' },
           { t: 'cards', numbered: true, title: 'Özəl investisiyalar üçün cəlbediciliyin yüksəldilməsinin altı prioriteti', items: [
